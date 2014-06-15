@@ -1,0 +1,23 @@
+<form action="#" class="edit-form">
+  <div class="person-edit">
+    <div class="actions">
+      <a href="#" id="delete">delete</a> |
+      <a href="#" id="cancel">cancel</a>
+    </div>
+  <div data-url="<%= url %>"></div>
+  <div class="form-row" id="first_name">
+    <label class="form-label">First name</label>
+    <input type="text" class="form-control" name="first_name" data-update="first_name" value="<%= firstName %>">
+  </div>
+  <div class="form-row" id="last_name">
+    <label class="form-label">Last name</label>
+    <input type="text" class="form-control" name="last_name" data-update="last_name" value="<%= lastName %>">
+  </div>
+
+  <div class="form-row">
+    <label class="form-label">Address </label>
+    <textarea class="form-control" name="address" data-update="address"><%= address %></textarea>
+  </div>
+
+  <input type="submit" value="Update person" class="form-button" id="submit-person">
+</form>
